@@ -424,3 +424,49 @@ svg { display: block; }
   *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+.friend-links {
+  margin-top: clamp(2rem, 5vw, 4rem);
+}
+
+.friend-link-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.friend-link-list a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--card);
+  color: inherit;
+  text-decoration: none;
+  transition: transform .25s ease, border-color .25s ease, background .25s ease;
+}
+
+.friend-link-list a:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  background: var(--card-strong);
+}
+
+.friend-link-list span {
+  font-size: .82rem;
+  color: var(--muted);
+}
+
+.friend-link-list strong {
+  font-size: .98rem;
+  font-weight: 600;
+}
+
+.friend-link-list i {
+  font-style: normal;
+  color: var(--accent);
+}

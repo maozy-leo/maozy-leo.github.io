@@ -213,22 +213,12 @@ svg { display: block; }
 .archive-strip small { color: var(--ink-faint); font-size: 10px; }
 .archive-strip i { color: var(--accent); font-family: var(--mono); font-size: 9px; font-style: normal; }
 
-.current-research { display: grid; grid-template-columns: 1fr 430px; gap: 50px; align-items: center; padding: clamp(30px, 5vw, 62px); border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
-.status-pill { display: inline-block; margin: 0 0 18px; padding: 5px 9px; border-radius: 20px; background: color-mix(in srgb, var(--accent) 12%, transparent); color: var(--accent); font-family: var(--mono); font-size: 8px; letter-spacing: .07em; text-transform: uppercase; }
-.research-intro h3 { margin: 0 0 18px; font-family: var(--serif); font-size: clamp(36px, 4.5vw, 59px); font-weight: 400; line-height: 1.07; letter-spacing: -.035em; }
-.research-intro > p:not(.status-pill) { max-width: 610px; color: var(--ink-soft); font-size: 13px; }
-.research-triangle { position: relative; width: 400px; height: 330px; max-width: 100%; margin-inline: auto; }
-.research-triangle svg { position: absolute; inset: 0; width: 100%; height: 100%; }
-.research-triangle svg path, .research-triangle svg circle { fill: none; stroke: var(--line-strong); stroke-width: 1; stroke-dasharray: 4 6; }
-.tri-node { position: absolute; z-index: 2; width: 90px; height: 90px; display: grid; place-items: center; border: 1px solid var(--line-strong); border-radius: 50%; background: var(--surface-solid); text-align: center; font-family: var(--mono); font-size: 10px; line-height: 1.35; }
-.tri-node.top { top: 5px; left: calc(50% - 45px); }.tri-node.left { left: 20px; bottom: 5px; }.tri-node.right { right: 20px; bottom: 5px; }
-.tri-center { position: absolute; z-index: 2; left: 50%; top: 55%; transform: translate(-50%,-50%); color: var(--accent); text-align: center; font-family: var(--mono); font-size: 8px; line-height: 1.6; letter-spacing: .06em; text-transform: uppercase; }
-.research-questions { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 35px; border-block: 1px solid var(--line); }
+.research-questions { display: grid; grid-template-columns: repeat(2, 1fr); margin-top: 35px; border-block: 1px solid var(--line); }
 .research-questions article { padding: 33px; border-right: 1px solid var(--line); }
 .research-questions article:last-child { border-right: 0; }
-.research-questions article > span { color: var(--red); font-family: var(--mono); font-size: 9px; }
-.research-questions h3 { margin: 30px 0 9px; font-family: var(--serif); font-size: 22px; font-weight: 500; }
-.research-questions p { margin: 0; color: var(--ink-soft); font-size: 11px; }
+.research-questions article > span { color: var(--red); font-family: var(--mono); font-size: 9px; line-height: 1.55; }
+.research-questions h3 { margin: 30px 0 12px; font-family: var(--serif); font-size: 22px; font-weight: 500; }
+.research-questions p { margin: 0; color: var(--ink-soft); font-size: 12px; line-height: 1.9; }
 .past-research { margin-top: 100px; }
 .subsection-title { margin: 0 0 28px; font-family: var(--serif); font-size: 34px; font-weight: 400; }
 .research-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
@@ -382,7 +372,6 @@ svg { display: block; }
   .project-card { grid-template-columns: 1fr; }
   .project-card.reverse .project-visual { order: 0; }
   .project-visual { min-height: 440px; }
-  .current-research { grid-template-columns: 1fr 370px; }
   .garden-network { width: 62%; }.garden-detail { width: 38%; }.semester-timeline { right: 38%; }
   .domain-node { width: 115px; height: 115px; }.domain-node.center { width: 150px; height: 150px; left: calc(50% - 75px); top: calc(50% - 75px); }
   .domain-node strong { font-size: 14px; }.n-math { left: calc(50% - 57px); }.n-ai { left: calc(50% - 57px); }
@@ -403,7 +392,7 @@ svg { display: block; }
   .section-heading { display: block; margin-bottom: 45px; }.section-heading h2 { margin: 13px 0 20px; font-size: 49px; }.section-heading > p:last-child { font-size: 12px; }
   .formation-grid { grid-template-columns: 1fr; gap: 25px; }.timeline { padding-left: 20px; }.timeline-item { padding-left: 26px; }.timeline-item::before { left: -19px; }
   .project-list { gap: 70px; }.project-visual { min-height: 330px; padding: 23px; }.project-content h3 { font-size: 38px; }.archive-strip { grid-template-columns: 40px 1fr; margin-top: 65px; padding: 18px; }.archive-strip i { display: none; }
-  .current-research { grid-template-columns: 1fr; padding: 27px; }.research-triangle { width: 330px; height: 290px; }.research-questions { grid-template-columns: 1fr; }.research-questions article { border-right: 0; border-bottom: 1px solid var(--line); padding: 26px 5px; }.research-questions article:last-child { border-bottom: 0; }.research-questions h3 { margin-top: 15px; }.research-cards { grid-template-columns: 1fr; }.research-card { min-height: 240px; }
+  .research-questions { grid-template-columns: 1fr; }.research-questions article { border-right: 0; border-bottom: 1px solid var(--line); padding: 26px 5px; }.research-questions article:last-child { border-bottom: 0; }.research-questions h3 { margin-top: 15px; }.research-cards { grid-template-columns: 1fr; }.research-card { min-height: 240px; }
   .garden-stage { min-height: auto; overflow: visible; }.garden-network { position: relative; width: 100%; height: 590px; min-height: 0; }.garden-detail { position: relative; width: 100%; height: auto; min-height: 330px; border-left: 0; border-top: 1px solid rgba(255,255,255,.14); }.semester-timeline { position: relative; inset: auto; min-height: 590px; padding: 25px; }.domain-node { width: 100px; height: 100px; }.domain-node.center { width: 135px; height: 135px; left: calc(50% - 67px); top: calc(50% - 67px); }.n-math { left: calc(50% - 50px); top: 18px; }.n-prob { right: 15px; top: 115px; }.n-econ { right: 15px; bottom: 90px; }.n-ai { left: calc(50% - 50px); bottom: 18px; }.n-social { left: 15px; bottom: 90px; }.domain-node strong { font-size: 12px; }.domain-node span { font-size: 6px; }
   .reading-stats { grid-template-columns: repeat(2, 1fr); }.reading-stats > div { border-bottom: 1px solid var(--line); }.reading-stats > div:nth-child(2n) { border-right: 0; }.reading-stats > div:last-child { grid-column: 1 / -1; border-bottom: 0; }.reading-overview { grid-template-columns: 1fr; margin-top: 55px; }.reading-chart { grid-template-columns: 220px 1fr; }.donut { width: 215px; height: 215px; }.reading-quote { padding-left: 24px; }.bookshelf-block, .essays-block { margin-top: 85px; }.subsection-header { grid-template-columns: 1fr; }.book-grid { grid-template-columns: repeat(2, 1fr); }.essay-grid { grid-template-columns: 1fr; }.essay-card { min-height: 235px; padding: 25px; }
   .contact-grid { grid-template-columns: 1fr; }.contact-copy h2 { font-size: 57px; }.footer { flex-direction: column; margin-top: 70px; gap: 2px; }
@@ -413,7 +402,6 @@ svg { display: block; }
   .hero-visual { min-height: 445px; }.knowledge-orbit { width: 120%; margin-left: -10%; }.identity-card { width: 100%; padding: 14px; gap: 10px; }.identity-card strong { font-size: 9px; }
   .quiet-links { gap: 12px; }.button { padding-inline: 16px; }
   .project-visual { min-height: 270px; }.project-content h3 { font-size: 33px; }.project-links { flex-wrap: wrap; }
-  .research-triangle { width: 285px; height: 260px; }.tri-node { width: 75px; height: 75px; font-size: 8px; }.tri-node.top { left: calc(50% - 37px); }.tri-node.left { left: 5px; }.tri-node.right { right: 5px; }
   .garden-toolbar a { display: none; }.garden-network { height: 500px; }.domain-node { width: 85px; height: 85px; }.domain-node.center { width: 118px; height: 118px; left: calc(50% - 59px); top: calc(50% - 59px); }.domain-node small, .domain-node span { display: none; }.domain-node strong { font-size: 11px; }.n-math { left: calc(50% - 42px); }.n-ai { left: calc(50% - 42px); }.n-prob { right: 6px; }.n-econ { right: 6px; }.n-social { left: 6px; }.garden-detail { padding: 32px 25px; }
   .reading-chart { grid-template-columns: 1fr; justify-items: center; }.chart-legend { width: 220px; }.book-grid { grid-template-columns: 1fr; }.book-card { min-height: 105px; }
   .contact-links a { grid-template-columns: 60px 1fr auto; gap: 10px; }.contact-links strong { font-size: 15px; }

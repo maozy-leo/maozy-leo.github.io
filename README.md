@@ -1,11 +1,15 @@
 # Zhiyuan Mao — Personal Website
 
-静态单页个人网站，无构建依赖。
+A lightweight, dependency-free academic portfolio inspired by the information architecture of Academic Pages.
 
-## 文件
+## Pages
 
-- `index.html`：页面结构与内容
-- `styles.css`：视觉系统与响应式布局
-- `script.js`：语言、主题、知识花园和书架交互
-- `favicon.svg`：站点图标
-- `assets/documents/`：Social Barometer 与三份 Quantitative Finance 项目报告
+- `index.html` — biography, education, skills, contact information, and honors
+- `projects.html` — selected research and applied projects
+- `trajectories.html` — research, internship, and practice experience
+- `notes.html` — course notes, reports, and working notes
+- `blog.html` — essays and public writing
+
+## Local preview
+
+Serve the directory with any static file server, then open `index.html`. The site uses shared styles and JavaScript from `styles.css` and `script.js`.

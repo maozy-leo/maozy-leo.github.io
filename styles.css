@@ -110,7 +110,7 @@ a.note-card:hover { position:relative; z-index:1; background:var(--blue-pale); c
 .post-list>a:hover { padding-left:12px; background:linear-gradient(90deg,var(--wash),transparent); color:var(--ink); }
 .post-list time { padding-top:5px; color:var(--ink-faint); font-size:10px; }
 .post-list>a>span { color:var(--blue); font-size:17px; }
-.blog-closing { margin:48px 0 0; padding:28px 0 0; border-top:1px solid var(--line); color:var(--ink); font-size:18px; }
+.blog-closing { margin:48px 0 0; padding:3px 0 3px 25px; border-left:3px solid var(--blue); color:var(--ink); font-size:18px; }
 .site-footer { border-top:1px solid var(--line); }
 .site-footer p { width:min(calc(100% - 44px),var(--content)); margin:0 auto; padding:27px 0; color:var(--ink-faint); font-size:10px; }
 
@@ -297,7 +297,7 @@ body[data-page="projects"] .project-entry:last-child { border-bottom:0; }
 
 /* Notes — compact academic archive. */
 body[data-page="notes"] .notes-header { padding-bottom:54px; border-bottom:0; }
-.notes-intro { margin:0; padding:3px 0 3px 25px; border-left:3px solid var(--blue); font-size:20px; line-height:1.65; }
+.notes-intro,.accent-intro { margin:0; padding:3px 0 3px 25px; border-left:3px solid var(--blue); font-size:20px; line-height:1.65; }
 .notes-section { padding:39px 0 5px; border-top:1px solid var(--line); }
 .notes-section + .notes-section { margin-top:50px; }
 .notes-section-heading { display:flex; align-items:baseline; justify-content:space-between; gap:24px; }
@@ -328,7 +328,7 @@ body[data-page="notes"] .notes-header { padding-bottom:54px; border-bottom:0; }
 
 @media (max-width:620px) {
   body[data-page="notes"] .notes-header { padding-bottom:42px; }
-  .notes-intro { padding-left:18px; font-size:17px; }
+  .notes-intro,.accent-intro { padding-left:18px; font-size:17px; }
   .notes-section { padding-top:31px; }
   .notes-section + .notes-section { margin-top:42px; }
   .notes-section-heading h2 { font-size:25px; }
@@ -362,7 +362,7 @@ body[data-page="trajectories"] .page-header { border-bottom:0; }
 .trajectory-panel ul { margin:22px 0 0; padding-left:21px; color:var(--ink); font-size:15px; line-height:1.65; }
 .trajectory-panel li + li { margin-top:10px; }
 .trajectory-panel .entry-links { margin-top:25px; }
-.trajectory-panel-next { background:linear-gradient(135deg,#fafafa,var(--blue-pale)); }
+.trajectory-panel-next { border-top:0; border-left:3px solid var(--blue); background:linear-gradient(135deg,#fafafa,var(--blue-pale)); }
 @keyframes trajectory-panel-in { from { opacity:0; transform:translateY(5px); } to { opacity:1; transform:none; } }
 
 @media (max-width:720px) {

@@ -295,6 +295,34 @@ body[data-page="projects"] .project-entry:last-child { border-bottom:0; }
   .site-nav a.active::after { right:5px; bottom:7px; left:5px; }
 }
 
+/* Preserve the profile photograph's original cinematic 3:2 composition. */
+.avatar {
+  width:270px;
+  height:auto;
+  aspect-ratio:6330/4228;
+  border:0;
+  border-radius:12px;
+  outline:0;
+  background:#8fb4c7;
+  box-shadow:0 10px 26px rgba(44,78,96,.16),0 0 0 1px rgba(39,73,90,.12);
+}
+.avatar::before,.avatar::after { content:none; }
+.avatar img { border-radius:inherit; object-fit:contain; }
+
+@media (max-width:1100px) {
+  .avatar { width:230px; height:auto; }
+}
+
+@media (max-width:860px) {
+  .profile { grid-template-columns:180px 1fr; }
+  .avatar { width:180px; height:auto; border-radius:9px; }
+}
+
+@media (max-width:620px) {
+  .profile { grid-template-columns:120px 1fr; }
+  .avatar { width:120px; height:auto; border-radius:7px; }
+}
+
 /* Notes — compact academic archive. */
 body[data-page="notes"] .notes-header { padding-bottom:54px; border-bottom:0; }
 .notes-intro,.accent-intro { margin:0; padding:3px 0 3px 25px; border-left:3px solid var(--blue); font-size:20px; line-height:1.65; }
